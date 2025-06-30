@@ -81,7 +81,7 @@
       <a-camera webar-camera2 look-controls="enabled:true"></a-camera>
 
       <a-assets timeout="60000">
-        <a-asset-item id="masjidAsset" src="msjid.glb"></a-asset-item>
+        <a-asset-item id="houseAsset" src="livingroom.glb"></a-asset-item>
       </a-assets>
       <a-entity id="deskenv" environment="preset: starry; groundColor: #222; gridColor: #f28500;"></a-entity>
       <a-light type="ambient" color="#ffffff"></a-light>
@@ -94,11 +94,11 @@
           <!-- Add webar-loadmonitor attribute to the entities to display loading progress screen before starting the surface tracking -->
           <!-- Refer API Reference documentation for more details -->
           <a-entity webar-ux-control="stageCursorUX: true; userGestureRotation: true; userGestureScale: true">
-            <a-entity gltf-model="#masjidAsset" 
-              id="masjidModel"
-              rotation="0 0 0" 
-              position="0 0 0" 
-              scale="0.1 0.1 0.1"
+            <a-entity gltf-model="#houseAsset" 
+              id="houseModel"
+              rotation=" 90.00 0 0" 
+              position="-9.06 28.94 -2.35" 
+              scale="5.693 5.693 5.693"
               draco-loader="decoderPath: https://www.gstatic.com/draco/v1/decoders/"
               webar-loadmonitor="elType: glb">
             </a-entity>

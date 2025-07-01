@@ -25,7 +25,7 @@
       webar-mode="surface-tracking"
       file-source=""
       debug-mode="false"
-      auto-init="true"
+      auto-init="false"
       auto-start-tracking="true"
       static-camera="false"
       render-scene-on-desktop="false"
@@ -81,7 +81,7 @@
       <a-camera webar-camera2 look-controls="enabled:true"></a-camera>
 
       <a-assets timeout="60000">
-        <a-asset-item id="houseAsset" src="House.glb"></a-asset-item>
+        <a-asset-item id="kampongAsset" src="kampong.glb"></a-asset-item>
       </a-assets>
       <a-entity id="deskenv" environment="preset: starry; groundColor: #222; gridColor: #f28500;"></a-entity>
       <a-light type="ambient" color="#ffffff"></a-light>
@@ -94,8 +94,8 @@
           <!-- Add webar-loadmonitor attribute to the entities to display loading progress screen before starting the surface tracking -->
           <!-- Refer API Reference documentation for more details -->
           <a-entity webar-ux-control="stageCursorUX: true; userGestureRotation: true; userGestureScale: true">
-            <a-entity gltf-model="#houseAsset" 
-              id="houseModel"
+            <a-entity gltf-model="#kampongAsset" 
+              id="kampongModel"
               rotation=" 90 0 0" 
               position="-9.06 29.64 -2.35" 
               scale="5.693 5.693 5.693"
